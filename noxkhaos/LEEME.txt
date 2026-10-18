@@ -1,0 +1,12 @@
+NOXKHAOS · despliegue
+
+1) Reglas de Firebase (obligatorio, una sola vez)
+   Consola Firebase > Realtime Database > Reglas > pega database.rules.json > Publicar.
+   (o con CLI: firebase deploy --only database)
+
+2) Netlify
+   Arrastra la carpeta "site" a app.netlify.com/drop
+   (o conecta el repo: netlify.toml ya apunta a "site").
+
+3) Si el login falla en tu dominio nuevo:
+   Firebase > Authentication > Settings > Authorized domains > agrega tu dominio .netlify.app
